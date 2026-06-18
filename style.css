@@ -1,10 +1,15 @@
+/* Global styles for the entire website */
+/* Reset default margin and set a background color and font for the body */
 body {
     margin: 4;
     font-family: Arial, sans-serif;
     background: #0f172a;
     color:white;
 }
-
+/* Styles for the navigation bar */
+/* Use CSS Grid to create a responsive layout for the navigation links */
+/* The grid will automatically adjust the number of columns based on the available space, with a minimum width of 250px for each link and a maximum of 1fr (fraction of the available space) */
+/* Add a gap of 1.5rem between the links, padding around the nav, and center it with a max width of 1200px and auto margins */
 nav {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -12,8 +17,7 @@ nav {
     padding: 3rem;
     max-width: 1200px;
     margin: auto;
-}
-
+}/* Styles for the navigation links */
 nav a {
     display: block;
     padding: 1.5rem;
@@ -25,8 +29,47 @@ nav a {
     font-weight: 500;
 }
 
+/* Add a hover effect to the navigation links */
 nav a:hover {
     transform: translateY(-5px);
     background: #334155;
     color: #38bdf8;
+}
+
+/* Styles for the circular image */
+.page-container {
+  display: flex;                  /* Activates Flexbox layout */
+  justify-content: center;         /* Centers the image horizontally */
+  align-items: center;             /* Centers the image vertically */
+  min-height: 100vh;               /* Makes container fill the entire browser height */
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    gap: 40px;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;      /* Makes image circular */
+    object-fit: cover;       /* Prevents image distortion */
+    padding: 10px;           /* Space around image */
+    border: 3px solid #ddd;  /* Optional border */
+    flex-shrink: 0;
+}
+
+.hero-text {
+    max-width: 700px;
+}
+
+.hero-text h1 {
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    line-height: 1.6;
+    font-size: 1.1rem;
 }
