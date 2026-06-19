@@ -1,7 +1,45 @@
+/* Styles for home page */
 /* Global styles for the entire website */
 /* Reset default margin and set a background color and font for the body */
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 100vh;
+
+    background-color: #1f2937;
+    color: white;
+
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Sidebar links */
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 12px 0;
+}
+
+.sidebar a:hover {
+    color: #60a5fa;
+}
+
+/* Add spacing below titles */
+
+h1 {
+    padding: 20px 40px 0 40px;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
 body {
-    margin: 4;
+    margin: 4px;
     font-family: Arial, sans-serif;
     background: #0f172a;
     color:white;
@@ -72,4 +110,56 @@ nav a:hover {
 .hero-text p {
     line-height: 1.6;
     font-size: 1.1rem;
+}
+
+/* Styles for the project sections */
+.project-container{
+    display:flex;
+    gap:30px;
+    max-width:1400px;
+    margin:auto;
+    padding:40px;
+}
+
+/* Styles for the project content and milestones sections */
+/* Modernize the project content section with a white background, rounded corners, padding, and a subtle box shadow for depth. Use a clean font and increase line spacing for better readability. */
+
+.project-content {
+    flex: 3;
+    background: white;
+    color: #1e293b;
+    padding: 40px;
+    border-radius: 16px;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,0.08),
+        0 4px 10px rgba(0,0,0,0.04);
+
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+.milestones{
+    flex:1;
+    position:sticky;
+    top:20px;
+    height:fit-content;
+
+    background:white;
+    color:black;    
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+.milestone{
+    padding:12px;
+    color:black;   
+    margin-bottom:10px;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.completed{
+    background:#e8ffe8;
 }
