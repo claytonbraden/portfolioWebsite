@@ -9,8 +9,21 @@
     </head>
 
     <body> 
+    <!-- Side bar, use button from script.js-->
+    <div id="sidebar" class="sidebar">
+        <button id="toggle-btn">☰</button>
 
-<h1>Programming Languages</h1>
+        <div class="sidebar-links">
+            <a href="../index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="../resume/resume.html">Resume</a>
+            <a href="../aboutMe/aboutMe.html">About</a>
+            <a href="../aboutMe/contactInfo.html">Contact</a>
+        </div>
+    </div>
+    <div id="main-content" class="main-content">
+
+<h1 class="projects-title">Programming Languages</h1>
 <ul>
   <li>Python - Pandas, Transformers, Scikit-learn, NumPy, Matplotlib, Seaborn</li>
   <li>C++</li>
@@ -21,14 +34,15 @@
   <li>SQL - PostrGre, MySQL, SQLite</li>
 </ul>
 
-<h1>Proficiencies</h1>
+<h1 class="projects-title">Proficiencies</h1>
 <ul>
   <li>Machine Learning - PyTorch, TensorFlow</li>
   <li>Model Devolopment and Fine-Tuning (LLM and Computer Vision)</li>
   <li>Robotics Controls - Logging, Performance Improvements</li>
   <li>API Connections and Database Devolopment</li>
 </ul>
-
+</div>
+<script src="../script.js"></script>
 </body>
 
 

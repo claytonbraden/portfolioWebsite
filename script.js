@@ -1,8 +1,17 @@
-Clayton Braden
 
-Computer Science Student
-Interested in AI, Reinforcement Learning, Systems, and Software Engineering
+/* For the sidebar toggle functionality */
+document.addEventListener('DOMContentLoaded', () => {
+    const sidebar = document.getElementById('sidebar');
+    const mainContent = document.getElementById('main-content');
+    const toggleBtn = document.getElementById('toggle-btn');
 
-[Resume]
-[GitHub]
-[LinkedIn]
+    
+    if (sidebar && mainContent && toggleBtn) {
+        toggleBtn.addEventListener('click', () => {
+            console.log("Button clicked");
+            
+            sidebar.classList.toggle('open');
+            mainContent.classList.toggle('shifted');
+        });
+    }
+});
