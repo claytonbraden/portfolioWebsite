@@ -254,3 +254,34 @@ nav a:hover {
 .completed{
     background:#e8ffe8;
 }
+
+/*Media formatting
+
+.milestone {
+    padding: 20px;
+    margin-bottom: 24px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.milestone figure {
+    margin: 20px 0;
+}
+
+.milestone img,
+.milestone video {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.milestone figcaption {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.milestone h3 {
+    margin-top: 0;
+}
