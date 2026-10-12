@@ -43,13 +43,52 @@
         <p>GitHub Repository: <a href="https://github.com/claytonbraden/pickleballVision" target="_blank">https://github.com/claytonbraden/pickleballVision</a></p>
     </section>
 
-    <aside class="milestones">
-        <!-- milestone boxes -->
-        <div class="milestone">
-            <h3>Milestone 1: TBD
-</h3>
-        </div>
-        
+<aside class="milestones">
+    <div class="milestone">
+        <h3>Milestone 1: Building a 2,000+ Frame Labeled Dataset</h3>
+        <p>
+            Developing a custom frame-labeling tool to annotate pickleball
+            footage from multiple matches. The goal is to build a diverse
+            dataset of 2,000+ labeled frames to train and evaluate
+            computer vision models for ball detection and tracking.
+        </p>
+
+        <figure>
+            <img
+                src="Pickleball Labeler Frame_No Box.png"
+                alt="Pickleball video frame before ball annotation"
+                loading="lazy"
+            >
+            <figcaption>
+                Original video frame before ball annotation.
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img
+                src="Pickleball Labeler Frame_Box Around Ball.png"
+                alt="Pickleball video frame with a bounding box around the ball"
+                loading="lazy"
+            >
+            <figcaption>
+                Labeled frame with a bounding box identifying the ball.
+            </figcaption>
+        </figure>
+
+        <h4>Frame Labeling Demonstration</h4>
+        <video controls preload="metadata" width="100%">
+            <source
+                src="Pickleball Frame Laeler Video Example.mp4"
+                type="video/mp4"
+            >
+            Your browser does not support HTML video.
+        </video>
+        <p>
+            Demonstration of the custom tool used to label pickleball
+            video frames for supervised learning.
+        </p>
+    </div>
+</aside>
     </aside>
 
 </div>
